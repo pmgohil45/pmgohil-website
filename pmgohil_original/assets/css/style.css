@@ -520,6 +520,67 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Certifications
+--------------------------------------------------------------*/
+.certifications .certifications-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.certifications .certifications-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.certifications .certifications-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.certifications .certifications-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.certifications .certifications-item ul {
+  padding-left: 20px;
+}
+
+.certifications .certifications-item ul li {
+  padding-bottom: 10px;
+}
+
+.certifications .certifications-item:last-child {
+  padding-bottom: 0;
+}
+
+.certifications .certifications-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
@@ -895,6 +956,67 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Publications
+--------------------------------------------------------------*/
+.publications .publications-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.publications .publications-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.publications .publications-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.publications .publications-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.publications .publications-item ul {
+  padding-left: 20px;
+}
+
+.publications .publications-item ul li {
+  padding-bottom: 10px;
+}
+
+.publications .publications-item:last-child {
+  padding-bottom: 0;
+}
+
+.publications .publications-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
@@ -1255,3 +1377,297 @@ section {
   }
 }
  
+/*--------------------------------------------------------------
+# Social Media Card Design
+--------------------------------------------------------------*/
+
+.center {
+  padding: 100px 0;
+  margin: auto;
+}
+
+.main_back {
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(90deg);
+  width: 11em;
+  height: 11em;
+  background: linear-gradient(270deg, #1072A1, #9F3657, #149DDD);
+  z-index: -2;
+  box-shadow: inset 0px 0px 180px 5px #ffffff;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14em;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.outer_card {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  background: lightgrey;
+  transition: 0.4s ease-in-out, 0.2s background-color ease-in-out,
+    0.2s background-image ease-in-out;
+  background: rgba(255, 255, 255, 0.596);
+  backdrop-filter: blur(5px);
+  border: 1px solid transparent;
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card .instagram {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #DA117E;
+}
+
+.card:nth-child(2) {
+  border-radius: 0px;
+}
+
+.card:nth-child(2) .phone-call {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #5774FF;
+}
+
+.card:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(3) .gmail {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #ef313a;
+}
+
+.card:nth-child(4) {
+  border-radius: 0px;
+}
+
+.card:nth-child(4) .facebook {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #0863F7;
+}
+
+.card:nth-child(5) {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.card:nth-child(5) .github {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: black;
+}
+
+.card:nth-child(6) {
+  border-radius: 0px;
+}
+
+.card:nth-child(6) .telegram {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #29b6f6;
+}
+
+.card:nth-child(7) {
+  border-radius: 0px;
+}
+
+.card:nth-child(7) .whatsapp {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #29AF3E
+}
+
+.card:nth-child(8) {
+  border-radius: 0px;
+}
+
+.card:nth-child(8) .youtube {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #FF0000;
+}
+
+.card:nth-child(9) {
+  border-radius: 0px;
+}
+
+.card:nth-child(9) .threads {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  fill: #080808;
+}
+
+.main:hover {
+  width: 14em;
+  cursor: pointer;
+}
+
+.main:hover .main_back {
+  opacity: 0;
+}
+
+.main:hover .card {
+  margin: 0.2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.main:hover .card:nth-child(5) {
+  border: transparent;
+}
+
+.main:hover .text {
+  opacity: 0;
+  z-index: -3;
+}
+
+.main:hover .instagram {
+  opacity: 1;
+}
+
+.main:hover .phone-call {
+  opacity: 1;
+}
+
+.main:hover .gmail {
+  opacity: 1;
+}
+
+.main:hover .facebook {
+  opacity: 1;
+}
+
+.main:hover .whatsapp {
+  opacity: 1;
+}
+
+.main:hover .youtube {
+  opacity: 1;
+}
+
+.main:hover .github {
+  opacity: 1;
+}
+
+.main:hover .telegram {
+  opacity: 1;
+}
+
+.main:hover .threads {
+  opacity: 1;
+}
+
+.card:nth-child(1):hover {
+  background-color: #DA117E;
+}
+
+.card:nth-child(1):hover .instagram {
+  fill: white;
+}
+
+.card:nth-child(2):hover {
+  background-color: #5774FF;
+}
+
+.card:nth-child(2):hover .phone-call {
+  fill: white;
+}
+
+.card:nth-child(3):hover {
+  background-color: #ef313a;
+}
+
+.card:nth-child(3):hover .gmail {
+  fill: white;
+}
+
+.card:nth-child(4):hover {
+  background-color: #0863F7;
+}
+
+.card:nth-child(4):hover .facebook {
+  fill: white;
+}
+
+.card:nth-child(5):hover {
+  background-color: black;
+}
+
+.card:nth-child(5):hover .github {
+  fill: white;
+}
+
+.card:nth-child(6):hover {
+  background-color: #29b6f6;
+}
+
+.card:nth-child(6):hover .telegram > path:nth-of-type(1) {
+  fill: white;
+}
+
+.card:nth-child(6):hover .telegram > path:nth-of-type(2) {
+  fill: #29b6f6;
+}
+
+.card:nth-child(6):hover .telegram > path:nth-of-type(3) {
+  fill: #29b6f6;
+}
+
+.card:nth-child(7):hover {
+  background-color: #29AF3E;
+}
+
+.card:nth-child(7):hover .whatsapp {
+  fill: white;
+}
+
+.card:nth-child(8):hover {
+  background-color: #FF0000;
+}
+
+.card:nth-child(8):hover .youtube {
+  fill: white;
+}
+
+.card:nth-child(9):hover {
+  background-color: #080808;
+}
+
+.card:nth-child(9):hover .threads {
+  fill: white;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-size: 1em;
+  transition: 0.4s ease-in-out;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.33em;
+  z-index: 3;
+}
+
